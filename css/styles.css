@@ -1,0 +1,54 @@
+@import url(http://weloveiconfonts.com/api/?family=fontelico|zocial);
+
+/* zocial */
+[class*="zocial-"]:before {
+  font-family: 'zocial', sans-serif;
+  font-size: 18px;
+  margin-left: 30px;
+}
+
+html {
+	height: 100%;
+}
+
+li {
+	float: right;
+}
+
+
+body {
+	position: relative;
+	height: 100%;
+}
+
+.jumbotron {
+	background: url("../img/back.jpg") no-repeat center center;
+	background-size: cover;
+	color: #FFFAF0;
+}
+
+.card-img-top {
+	max-width: 100%;
+}
+
+form {
+	margin-top: 30px;
+}
+
+
+.contact {
+	margin-top: 30px;
+	margin-bottom: 50px;
+}
+
+#map {
+	height: 100%;
+}
+
+.map {
+	height: 250px;
+}
+
+.footer {
+	margin-top: 20px;
+}
