@@ -10,17 +10,17 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="css/styles.css">
     </head>
-    <body>
+    <body id="body">
         <nav class="navbar navbar-dark bg-inverse" id="navbar-example">
             <ul class="nav navbar-nav">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">메인<span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="#body">메인<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">프로젝트</a>
+                    <a class="nav-link" href="#projects">프로젝트</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">연락</a>
+                    <a class="nav-link" href="#contact">연락</a>
                 </li>
             </ul>
         </nav>
@@ -30,40 +30,38 @@
                 <p class="lead"></p>
             </div>
         </div>
-        <div class="card-deck-wrapper">
-            <div class="card-deck">
-                <div class="card">
-                    <img class="card-img-top" src="img/neighborhoodmap.png" alt="Card image cap">
-                    <div class="card-block">
-                        <h4 class="card-title">Neighborhood Map</h4>
-                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                        <span class="tag tag-pill tag-primary">Google Map API</span>
-                        <span class="tag tag-pill tag-primary">AJAX</span>
-                        <span class="tag tag-pill tag-primary">Knockout JS</span>
-                        <span class="tag tag-pill tag-primary">JQuery</span>
-                    </div>
+        <div id="projects">
+            <div class="card">
+                <img class="card-img-top" src="img/neighborhoodmap.png" alt="Card image cap">
+                <div class="card-block">
+                    <a href="https://neighbborhoodmap.herokuapp.com/index.html"><h4 class="card-title">Neighborhood Map</h4></a>
+                    <p class="card-text">이 프로젝트는 신촌 주변 지역의 몇 군데 맛집을 보여주는 웹 앱입니다. 구글 맵 API, 구글 스트리트 뷰, Foursquare API를 사용하여 구현하였으며 Knockout JS를 이용하여 동적 웹 UI를 구현하였습니다. </p>
+                    <p class="card-text"><small class="text-muted">2016년 11월</small></p>
+                    <span class="tag tag-pill tag-primary">Google Map API</span>
+                    <span class="tag tag-pill tag-primary">AJAX</span>
+                    <span class="tag tag-pill tag-primary">Knockout JS</span>
+                    <span class="tag tag-pill tag-primary">JQuery</span>
                 </div>
-                <div class="card">
-                    <img class="card-img-top" src="img/itemcatalog.png" alt="Card image cap">
-                    <div class="card-block">
-                        <h4 class="card-title">Item Catalog</h4>
-                        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                        <span class="tag tag-pill tag-primary">Google Map API</span>
-                        <span class="tag tag-pill tag-primary">AJAX</span>
-                        <span class="tag tag-pill tag-primary">Knockout JS</span>
-                        <span class="tag tag-pill tag-primary">JQuery</span>
-                        
-                    </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="img/itemcatalog.png" alt="Card image cap">
+                <div class="card-block">
+                    <a href="https://itemcatalogproject.herㄴokuapp.com"><h4 class="card-title">Item Catalog</h4></a>
+                    <p class="card-text">이 프로젝트에서는 파이썬 플라스크를 사용하여 품목을 추가하거나 제거할 수 있는 기능을 가진 RESTful한 웹 앱를 구현하였습니다. 구글 플러스와 페이스북을 통해서 본인 인증을 하고 및 권한을 부여하는 기능도 구현하였습니다.</p>
+                    <p class="card-text"><small class="text-muted">2016년 12월</small></p>
+                    <span class="tag tag-pill tag-primary">Python</span>
+                    <span class="tag tag-pill tag-primary">Flask</span>
+                    <span class="tag tag-pill tag-primary">third-party Oauth authentication</span>           
                 </div>
-                <div class="card">
-                    <img class="card-img-top" src="img/multiuserblog.png" alt="Card image cap">
-                    <div class="card-block">
-                        <h4 class="card-title">Card title</h4>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                    </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="img/multiuserblog.png" alt="Card image cap">
+                <div class="card-block">
+                    <a href="http://multiuserblog-147805.appspot.com/"><h4 class="card-title">Multi User Blog</h4></a>
+                    <p class="card-text">이 프로젝트에서는 가입, 로그인하여 글을 작성하고 수정하며 댓글을 달 수 있는 블로그를 구현하였습니다. Google data store를 사용하였고 구글 앱 앤진을 사용하여 배포하였습니다.</p>
+                    <p class="card-text"><small class="text-muted">2016년 11월</small></p>
+                    <span class="tag tag-pill tag-primary">Google NDB datastore</span>
+                    <span class="tag tag-pill tag-primary">Jinja(Python templating language)</span>
                 </div>
             </div>
         </div>
@@ -76,16 +74,16 @@
                     </div>              
                     <div class="footer">
                         <ul class="list-inline text-right">
-                            <li class="zocial-facebook">    facebook</li>
-                            <li class="zocial-twitter">    twitter</li>
-                            <li class="zocial-github">    github</li>
-                            <li class="zocial-linkedin">    linkedin</li>
+                            <li class="zocial-facebook"> facebook</li>
+                            <li class="zocial-twitter"> twitter</li>
+                            <a href="https://github.com/adler0311"><li class="zocial-github"> github</li></a>
+                            <a href="https://kr.linkedin.com/in/wonhonaseoul"><li class="zocial-linkedin"> linkedin</li></a>
                         </ul>
                     </div>
                 </div>
                 <div class="col-md-6">
                     <h2>연락주세요</h2>
-                    <form>
+                    <form action="mailto:adler0311@gmail.com" method="post" enctype="text/plain">
                         <div class="form-group">
                             <input class="form-control" type="text" value="이름" id="example-text-input">
                         </div>                
@@ -107,16 +105,33 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script>
 
         <script>
-            function initMap() {
-                // Create a map object and specify the DOM element for display.
-                var map = new google.maps.Map(document.getElementById('map'), {
-                    center: {lat: 37.558781, lng: 126.936903},
-                    scrollwheel: false,
-                    zoom: 16
-                });
-            }
+        function initMap() {
+            // Create a map object and specify the DOM element for display.
+            var map = new google.maps.Map(document.getElementById('map'), {
+                center: {lat: 37.558781, lng: 126.936903},
+                scrollwheel: false,
+                zoom: 16
+            });
+        }
         </script>
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCXzb5dM3xIVqpuIP-JTgorkvpjhVb5rT4&callback=initMap"
         async defer></script>
+
+        <script>
+        $(document).ready(function(){
+            $('a[href^="#"').on('click', function(e) {
+                e.preventDefault();
+
+                var target = this.hash;
+                var $target = $(target);
+
+                $('html, body').stop().animate({
+                    'scrollTop': $target.offset().top
+                }, 900, 'swing', function() {
+                    window.location.hash = target;
+                });
+            });
+        });
+        </script>
     </body>
 </html>
