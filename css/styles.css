@@ -7,26 +7,40 @@
   margin-left: 30px;
 }
 
-html {
-	height: 100%;
-}
-
-li {
-	float: right;
-}
-
 
 body {
 	position: relative;
-	height: 100%;
+}
+
+.nav-pills {
+	float: right;
+}
+
+.nav-item {
+	font-size: 18px;
+	color: white;
+	margin-right: 50px;
 }
 
 .jumbotron {
 	background: url("../img/back.jpg") no-repeat center center;
 	background-size: cover;
 	color: #FFFAF0;
-	height: 600px;
+	height: 800px;
 	margin-bottom: 0px;
+}
+
+.jumbotron-text {
+	margin-top: 100px;
+}
+
+.display-4 {
+	line-height: 160%;
+}
+
+.view-project {
+	width: 15%;
+	margin: 15% auto;
 }
 
 #projects {
@@ -41,23 +55,6 @@ body {
 
 .card-img-top {
 	max-width: 100%;
-}
-
-form {
-	margin-top: 30px;
-}
-
-.contact {
-	margin-top: 30px;
-	margin-bottom: 50px;
-}
-
-#map {
-	height: 100%;
-}
-
-.map {
-	height: 250px;
 }
 
 .footer {
