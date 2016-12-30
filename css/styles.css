@@ -11,7 +11,6 @@ body {
 [class*="zocial-"]:before {
   font-family: 'zocial', sans-serif;
   font-size: 18px;
-  margin-left: 30px;
 }
 
 
@@ -26,11 +25,9 @@ body {
 }
 
 .jumbotron {
-	background: url("../img/back.jpg") no-repeat center center;
-	background-size: cover;
+	background: url("../img/back.jpg");
 	color: #FFFAF0;
 	height: 800px;
-	margin-bottom: 0px;
 }
 
 .jumbotron-text {
@@ -41,9 +38,21 @@ body {
 	line-height: 160%;
 }
 
+@media screen and (min-width: 420px) and (max-width: 800px) {
+	.display-4 {
+		font-size: 32px;
+	}
+}
+
 .view-project {
 	width: 10%;
-	margin: 5% auto;
+	margin: 10% auto;
+}
+
+.btn-lg {
+	width: 200px;
+	font-size: 30px;
+	font-weight: 900;
 }
 
 .typed-cursor{
@@ -68,22 +77,154 @@ body {
     100% { opacity:1; }
 }
 
+#border1 {
+	height: 80px;
+}
+
 #projects {
 	background: url("../img/project.jpg") no-repeat center center;
 	background-size: cover;
 	font-family: 'Jeju Gothic', serif;
+	margin-top: -40px;
 
 }
 
+.img-part {
+	height: 100%;
+}
+
+.hovereffect {
+	width:100%;
+	height:100%;
+	float:left;
+	overflow:hidden;
+	position:relative;
+	text-align:center;
+	cursor:default;
+}
+
+.hovereffect .overlay {
+	width:100%;
+	height:100%;
+	position:absolute;
+	overflow:hidden;
+	top:0;
+	left:0;
+	opacity:0;
+	background-color:rgba(0,0,0,0.5);
+	-webkit-transition:all .4s ease-in-out;
+	transition:all .4s ease-in-out
+}
+
+.hovereffect img {
+	display:block;
+	position:relative;
+	-webkit-transition:all .4s linear;
+	transition:all .4s linear;
+}
+
+.hovereffect a.info {
+	text-decoration:none;
+	display:inline-block;
+	text-transform:uppercase;
+	color:#fff;
+	border:1px solid #fff;
+	background-color:transparent;
+	opacity:0;
+	filter:alpha(opacity=0);
+	-webkit-transition:all .2s ease-in-out;
+	transition:all .2s ease-in-out;
+	margin: 160px 0;
+	padding:7px 14px;
+	width: 160px;
+	height: 40px;
+}
+
+.hovereffect a.info:hover {
+	box-shadow:0 0 5px #fff;
+}
+
+.hovereffect:hover img {
+	-ms-transform:scale(1.2);
+	-webkit-transform:scale(1.2);
+	transform:scale(1.2);
+}
+
+.hovereffect:hover .overlay {
+	opacity:1;
+	filter:alpha(opacity=100);
+}
+
+.hovereffect:hover a.info {
+	opacity:1;
+	filter:alpha(opacity=100);
+	-ms-transform:translatey(0);
+	-webkit-transform:translatey(0);
+	transform:translatey(0);
+}
+
+.hovereffect:hover a.info {
+	-webkit-transition-delay:.2s;
+	transition-delay:.2s;
+}
+
+.hovereffect span.info {
+	display: none;
+}
+
 .card {
-	width: 40%;
-	margin: 0 auto ;
+	background-color: white; 
+	width: 60%;
+	height: 400px;
+	margin: 40px auto 80px;
+}
+
+.card-block {
+	height: 100%;
 }
 
 .card-img-top {
 	max-width: 100%;
+	width: 600px;
+	height: 100%;
 }
 
-.footer {
-	margin-top: 20px;
+
+#border2 {
+	height: 80px;i
+
+}
+
+footer {
+	height: 80px;
+	background: url("../img/back.jpg");
+}
+
+.nav-inline {
+	display: -webkit-flex;
+	display: flex;
+	padding-top: 20px;
+}
+
+
+
+#social {
+	font-size: 24px;
+	margin-left: 50px;
+}
+
+#social:hover {
+	-ms-transform:scale(1.2);
+	-webkit-transform:scale(1.2);
+	transform:scale(1.2);
+	text-decoration: none;
+	border-bottom: 3px solid;
+}
+
+.parallax {
+	/* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }

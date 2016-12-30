@@ -6,9 +6,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
 
+        <title>포트폴리오 사이트</title>
+
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="css/styles.css">
+        <link rel='stylesheet' media='screen and (max-width: 420px)' href='css/narrow.css' />
     </head>
     <body id="body" data-spy="scroll" data-target=".navbar" data-offset="50">
         <nav class="navbar navbar-inverse navbar-fixed-top bg-inverse">
@@ -17,12 +20,11 @@
                     <a class="nav-link" href="#body">메인</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#projects">프로젝트</a>
+                    <a class="nav-link" href="#border1">프로젝트</a>
                 </li>
             </ul>
         </nav>       
-
-        <div class="jumbotron jumbotron-fluid">
+        <div class="jumbotron jumbotron-fluid parallax">
             <div class="container jumbotron-text">
                 <h2 class="display-4">
                     안녕하세요<br>
@@ -35,58 +37,172 @@
             </div>
         </div>
         <div id="projects">
-            <div class="card">
-                <img class="card-img-top" src="img/neighborhoodmap.png" alt="Card image cap">
+            <div class="row" id="border1">
+            </div>
+            <div class="card card-outline-primary text-xs-center">
                 <div class="card-block">
-                    <a href="https://neighbborhoodmap.herokuapp.com/index.html"><h4 class="card-title">Neighborhood Map</h4></a>
-                    <p class="card-text">이 프로젝트는 신촌 주변 지역의 몇 군데 맛집을 보여주는 웹 앱입니다. 구글 맵 API, 구글 스트리트 뷰, Foursquare API를 사용하여 구현하였으며 Knockout JS를 이용하여 동적 웹 UI를 구현하였습니다. </p>
-                    <p class="card-text"><small class="text-muted">2016년 11월</small></p>
-                    <span class="tag tag-pill tag-primary">Google Map API</span>
-                    <span class="tag tag-pill tag-primary">AJAX</span>
-                    <span class="tag tag-pill tag-primary">Knockout JS</span>
-                    <span class="tag tag-pill tag-primary">JQuery</span>
+                    <div class="col-md-6 img-part">
+                        <div class="hovereffect">
+                            <img class="card-img-top" src="img/neighborhoodmap.png" alt="Card image cap">
+                            <div class="overlay">
+                                <a class="info" href="https://neighbborhoodmap.herokuapp.com/index.html">보러 가기</a>
+                                <span class="info " id="modal" data-toggle="modal" data-target="#myModal1">설명</span>
+                            </div>
+                            <!-- Modal -->
+                            <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                            <h4 class="modal-title" id="myModalLabel">Neigborhood Map</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="description-modal">
+                                                <p class="card-text">이 프로젝트는 신촌 주변 지역의 몇 군데 맛집을 보여주는 웹 앱입니다. 구글 맵 API, 구글 스트리트 뷰, Foursquare API를 사용하여 구현하였으며 Knockout JS를 이용하여 동적 웹 UI를 구현하였습니다. </p>
+                                                <p class="card-text"><small class="text-muted">2016년 11월</small></p>
+                                                <span class="tag tag-pill tag-primary">Google Map API</span>
+                                                <span class="tag tag-pill tag-primary">AJAX</span>
+                                                <span class="tag tag-pill tag-primary">Knockout JS</span>
+                                                <span class="tag tag-pill tag-primary">JQuery</span>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-outline-primary"><a href="https://neighbborhoodmap.herokuapp.com/index.html">보러가기</a></button>
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">닫기</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>        
+                    <div class="col-md-6">
+                        <div class="card-block">
+                            <a href="https://neighbborhoodmap.herokuapp.com/index.html"><h4 class="card-title">Neighborhood Map</h4></a>
+                            <div class="description">
+                                <p class="card-text">이 프로젝트는 신촌 주변 지역의 몇 군데 맛집을 보여주는 웹 앱입니다. 구글 맵 API, 구글 스트리트 뷰, Foursquare API를 사용하여 구현하였으며 Knockout JS를 이용하여 동적 웹 UI를 구현하였습니다. </p>
+                                <p class="card-text"><small class="text-muted">2016년 11월</small></p>
+                                <span class="tag tag-pill tag-primary">Google Map API</span>
+                                <span class="tag tag-pill tag-primary">AJAX</span>
+                                <span class="tag tag-pill tag-primary">Knockout JS</span>
+                                <span class="tag tag-pill tag-primary">JQuery</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="card">
-                <img class="card-img-top" src="img/itemcatalog.png" alt="Card image cap">
+            <div class="card card-outline-primary text-xs-center">
                 <div class="card-block">
-                    <a href="https://itemcatalogproject.herㄴokuapp.com"><h4 class="card-title">Item Catalog</h4></a>
-                    <p class="card-text">이 프로젝트에서는 파이썬 플라스크를 사용하여 품목을 추가하거나 제거할 수 있는 기능을 가진 RESTful한 웹 앱를 구현하였습니다. 구글 플러스와 페이스북을 통해서 본인 인증을 하고 및 권한을 부여하는 기능도 구현하였습니다.</p>
-                    <p class="card-text"><small class="text-muted">2016년 12월</small></p>
-                    <span class="tag tag-pill tag-primary">Python</span>
-                    <span class="tag tag-pill tag-primary">Flask</span>
-                    <span class="tag tag-pill tag-primary">third-party Oauth authentication</span>           
+                    <div class="col-md-6 img-part">
+                        <div class="hovereffect">
+                            <img class="card-img-top" src="img/itemcatalog.png" alt="Card image cap">
+                            <div class="overlay">
+                                <a class="info" href="https://itemcatalogproject.herokuapp.com">보러 가기</a>
+                                <span class="info " id="modal" data-toggle="modal" data-target="#myModal2">설명</span>
+                            </div>
+                            <!-- Modal -->
+                            <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                            <h4 class="modal-title" id="myModalLabel">Item Catalog</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="description-modal">
+                                                <p class="card-text">이 프로젝트에서는 파이썬 플라스크를 사용하여 품목을 추가하거나 제거할 수 있는 기능을 가진 RESTful한 웹 앱를 구현하였습니다. 구글 플러스와 페이스북을 통해서 본인 인증을 하고 및 권한을 부여하는 기능도 구현하였습니다.</p>
+                                                <p class="card-text"><small class="text-muted">2016년 12월</small></p>
+                                                <span class="tag tag-pill tag-primary">Python</span>
+                                                <span class="tag tag-pill tag-primary">Flask</span>
+                                                <span class="tag tag-pill tag-primary">third-party Oauth authentication</span>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-outline-primary"><a href="https://itemcatalogproject.herokuapp.com">보러가기</a></button>
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">닫기</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>  
+                    <div class="col-md-6">
+                        <div class="card-block">
+                            <a href="https://itemcatalogproject.herokuapp.com"><h4 class="card-title">Item Catalog</h4></a>
+                            <div class="description">
+                                <p class="card-text description">이 프로젝트에서는 파이썬 플라스크를 사용하여 품목을 추가하거나 제거할 수 있는 기능을 가진 RESTful한 웹 앱를 구현하였습니다. 구글 플러스와 페이스북을 통해서 본인 인증을 하고 및 권한을 부여하는 기능도 구현하였습니다.</p>
+                                <p class="card-text"><small class="text-muted">2016년 12월</small></p>
+                                <span class="tag tag-pill tag-primary">Python</span>
+                                <span class="tag tag-pill tag-primary">Flask</span>
+                                <span class="tag tag-pill tag-primary">third-party Oauth authentication</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="card">
-                <img class="card-img-top" src="img/multiuserblog.png" alt="Card image cap">
+            <div class="card card-outline-primary text-xs-center">
                 <div class="card-block">
-                    <a href="http://multiuserblog-147805.appspot.com/"><h4 class="card-title">Multi User Blog</h4></a>
-                    <p class="card-text">이 프로젝트에서는 가입, 로그인하여 글을 작성하고 수정하며 댓글을 달 수 있는 블로그를 구현하였습니다. Google data store를 사용하였고 구글 앱 앤진을 사용하여 배포하였습니다.</p>
-                    <p class="card-text"><small class="text-muted">2016년 11월</small></p>
-                    <span class="tag tag-pill tag-primary">Google NDB datastore</span>
-                    <span class="tag tag-pill tag-primary">Jinja(Python templating language)</span>
+                    <div class="col-md-6 img-part">
+                        <div class="hovereffect">
+                            <img class="card-img-top" src="img/multiuserblog.png" alt="Card image cap">
+                            <div class="overlay">
+                                <a class="info" href="http://multiuserblog-147805.appspot.com/">보러 가기</a>
+                                <span class="info " id="modal" data-toggle="modal" data-target="#myModal3">설명</span>
+                            </div>
+                            <!-- Modal -->
+                            <div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                            <h4 class="modal-title" id="myModalLabel">Multi User Blog</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="description-modal">
+                                                <p class="card-text">이 프로젝트에서는 가입, 로그인하여 글을 작성하고 수정하며 댓글을 달 수 있는 블로그를 구현하였습니다. Google data store를 사용하였고 구글 앱 앤진을 사용하여 배포하였습니다.</p>
+                                                <p class="card-text"><small class="text-muted">2016년 11월</small></p>
+                                                <span class="tag tag-pill tag-primary">Google NDB datastore</span>
+                                                <span class="tag tag-pill tag-primary">Jinja(Python templating language)</span>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-outline-primary"><a href="http://multiuserblog-147805.appspot.com/">보러가기</a></button>
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">닫기</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>  
+                    <div class="col-md-6">
+                        <div class="card-block">
+                            <a href="http://multiuserblog-147805.appspot.com/"><h4 class="card-title">Multi User Blog</h4></a>
+                            <div class="description">
+                                <p class="card-text">이 프로젝트에서는 가입, 로그인하여 글을 작성하고 수정하며 댓글을 달 수 있는 블로그를 구현하였습니다. Google data store를 사용하였고 구글 앱 앤진을 사용하여 배포하였습니다.</p>
+                                <p class="card-text"><small class="text-muted">2016년 11월</small></p>
+                                <span class="tag tag-pill tag-primary">Google NDB datastore</span>
+                                <span class="tag tag-pill tag-primary">Jinja(Python templating language)</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="card">
-                <img class="card-img-top" src="img/multiuserblog.png" alt="Card image cap">
-                <div class="card-block">
-                    <a href="http://multiuserblog-147805.appspot.com/"><h4 class="card-title">Multi User Blog</h4></a>
-                    <p class="card-text">이 프로젝트에서는 가입, 로그인하여 글을 작성하고 수정하며 댓글을 달 수 있는 블로그를 구현하였습니다. Google data store를 사용하였고 구글 앱 앤진을 사용하여 배포하였습니다.</p>
-                    <p class="card-text"><small class="text-muted">2016년 11월</small></p>
-                    <span class="tag tag-pill tag-primary">Google NDB datastore</span>
-                    <span class="tag tag-pill tag-primary">Jinja(Python templating language)</span>
-                </div>
+            <div class="row" id="border2">
             </div>
-        </div>        
-        <div class="footer">
-            <ul class="list-inline text-right">
-                <li class="zocial-facebook"> facebook</li>
-                <li class="zocial-twitter"> twitter</li>
-                <a href="https://github.com/adler0311"><li class="zocial-github"> github</li></a>
-                <a href="https://kr.linkedin.com/in/wonhonaseoul"><li class="zocial-linkedin"> linkedin</li></a>
-            </ul>
+            </div>     
         </div>
+        <footer class="parallax">
+            <ul class="nav nav-inline">
+                <a href="https://github.com/adler0311" id="social"><li class="zocial-github"> github</li></a>
+                <a href="https://kr.linkedin.com/in/wonhonaseoul" id="social"><li class="zocial-linkedin"> linkedin</li></a>        
+            </ul>
+        </footer>
+
 
         
         <!-- jQuery first, then Tether, then Bootstrap JS. -->
