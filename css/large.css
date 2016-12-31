@@ -1,49 +1,24 @@
-body {
-	min-width: 300px;
-}
 
 .jumbotron {
 	background: url("../img/back.jpg");
 	color: #FFFAF0;
-	height: 650px;
+	height: 700px;
 }
-
 
 .display-4 {
-	padding-left: 30px;
-	font-size: 24px;
+	font-size: 48px;
 }
 
 
-.view-project {
-	width: 10%;
-	margin: 50% auto;
-}
-
-.btn-lg {
-	width: 120px;
-	font-size: 18px;
-	font-weight: 900;
-	margin-left:-50px;
-}
-
-.card {
-	background-color: white; 
-	width: 60%;
-	height: 100%;
-	margin: 10px auto 50px;
-}
-
-.card-block {
-	padding: 0 0 0 0;
+#border1 {
+	height: 40px;
 }
 
 .img-part {
 	padding-top: 10px;
 	width: 100%;
-	height: 100px;
+	height: 300px;
 }
-
 
 .hovereffect span.info {
 	text-decoration:none;
@@ -56,11 +31,11 @@ body {
 	filter:alpha(opacity=0);
 	-webkit-transition:all .2s ease-in-out;
 	transition:all .2s ease-in-out;
-	margin: 30px 0;
-	padding: 5px 14px;
-	width: 80px;
-	height: 24px;
-	font-size: 8px;
+	margin: 120px 0;
+	padding: 14px 14px;
+	width: 40%;
+	height: 20%;
+	font-size: 20px;
 }
 
 .hovereffect span.info:hover {
@@ -84,38 +59,36 @@ body {
 	display: none;
 }
 
-.col-md-6 {
+.card-title {
+	margin-top: 10px;
+	font-size: 32px;
+}
+
+.card-block {
 	padding: 0 0 0 0;
 }
 
-h4.card-title {
-	margin: 0 auto 0 auto;
-	
-
+.col-md-6 {
+	width: 100%;
 }
-.card-title {
-	margin-top: 10px;
-	font-size: 18px;
+
+.card {
+	height: 100%;
 }
 
 .description {
 	display: none;
 }
 
-#border1 {
-	height: 20px;
-}
 
 #border2 {
-	height: 0;
+	height: 20px;
+
 }
 
 footer {
-	height: 40px;
-}
-
-.nav-inline {
-	padding-top: 0px;
+	height: 60px;
+	background: url("../img/back.jpg");
 }
 
 .parallax {
